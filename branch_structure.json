@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "fix/326-passkey-registration",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "fix/326-passkey-registration": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "fix/326-passkey-registration",
+    "origin"
+  ]
+}
