@@ -56,7 +56,7 @@ fn hex(bytes: &[u8]) -> String {
 }
 
 fn unhex(text: &str) -> std::vec::Vec<u8> {
-    assert!(text.len() % 2 == 0, "hex constants must be byte aligned");
+    assert!(text.len().is_multiple_of(2), "hex constants must be byte aligned");
     (0..text.len() / 2)
         .map(|i| {
             let hi = (text.as_bytes()[i * 2] as char).to_digit(16).expect("hex") as u8;
